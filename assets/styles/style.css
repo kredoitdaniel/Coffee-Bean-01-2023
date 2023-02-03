@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway:wght@400;700&display=swap');
+
+/* 
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;  
+
+    color values:
+        #96746b
+        #c7a17a
+        #312a26
+        #fff
+        #f2f2f2
+        #19100f
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;  
+}
+
+.wrapper {
+    width: 100%;
+}
+
+
+/* Header section 1 */
+.nav {
+    /* border: 5px solid red; */
+    width: 85%;
+    margin: 1em auto;
+    overflow: auto;
+}
+
+.nav h1 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #96746b;
+    float: left;
+}
+
+.nav ul {
+    float: right;
+    margin: 1em auto;
+}
+
+.nav ul li {
+    /* border: 3px dashed blue; */
+    display: inline;   
+}
+
+.nav ul li a {
+    /* border: 3px dashed darkgoldenrod; */
+    text-decoration: none;
+    margin-left: 1em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #312a26;
+}
+/* end Header section 1 */
+
+
+
+/* Banner Section 2 */
+.banner {
+    /* border: 5px solid red; */
+    height: 670px;
+    background-image: url(../images/banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner-text {
+    /* border: 3px dashed darkgoldenrod; */
+    position: absolute;
+    top: 50%;
+    left: 7.5%;
+    /* transform: translate(0,0);
+            1st value = horizontal (- left) (+ right)
+            2nd value = vertical (- top) (+ bottom)
+    */
+    transform: translate(0,-50%);
+}
+
+.banner-text h2 {
+    color: #c7a17a;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+.banner-text span {
+    color: #96746b;
+}
+
+.banner-text p {
+    color: #fff;
+}
+
+.banner-text a {
+    /* border: 3px solid yellowgreen; */
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    background-color: #312a26;
+    display: inline-block;
+    padding: 1em;
+    font-weight: 700;
+    margin-top: 1em;
+}
+/* end Banner Section 2 */
+
+
+/* Ads Section 3 */
+.ads {
+    /* border: 5px solid red; */
+    width: 85%;
+    margin: 4em auto;
+    overflow: auto;
+}
+
+.ads-img1 {
+    background-image: url(../images/adsimg1.jpg);
+
+    margin-right: 3%;
+}
+
+.ads-img2 {
+    background-image: url(../images/adsimg2.jpg);
+}
+
+.ads-items {
+    height: 350px;
+    width: 49.5%;
+    background-size: cover;
+    background-position: center;
+    float: left;
+    /* margin-right: 2%; */
+    position: relative;
+}
+
+.ads-text {
+    /* border: 3px dashed darkgoldenrod; */
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0,-50%);
+
+    width: 35%;
+}
+
+.ads-text h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-shadow: 3px 3px 6px #312a26;
+
+    line-height: 1.2em;
+}
+
+.ads-text a {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+/* .ads-items:nth-child(2) {
+    margin-right: 0;
+} */
+/* end Ads Section 3 */
+
+
+/* Merchandise Section 4 */
+.merch {
+    /* border: 5px solid red; */
+    width: 85%;
+    margin: 4em auto;
+    
+}
+
+.merch-gallery {
+    /* border: 4px solid blue; */
+    overflow: auto;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.section-header span {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    color: #c7a17a;
+    font-weight: 500;
+}
+
+.section-header h2 {
+    color: #312a26;
+    text-transform: uppercase;
+}
+
+.section-header hr {
+    height: 2px;
+    width: 25%;
+    margin: auto;
+    background-color: #c7a17a;
+}
+
+.merch-gallery img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover; /* remove streched image */
+}
+
+.merch-items {
+    /* border: 3px dashed red; */
+    width: 24%;
+    float: left;
+    margin-right: 1.33%;
+    margin-top: 2em;
+}
+
+.merch-items:nth-child(4),
+.merch-items:nth-child(8) {
+    margin-right: 0;
+}
+/* end Merchandise Section 4 */
+
+
+/* Discount Section 5 */
+.discount {
+    /* border: 5px solid red; */
+    width: 85%;
+    margin: 4em auto;
+    height: 350px;
+    background-image: url(../images/discount-img.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.discount-text {
+    /* border: 3px dashed yellow; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.discount-text span {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.discount-text h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.discount-text a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: #312a26;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 1em;
+    display: inline-block;
+    margin-top: 1em;
+    font-weight: 700;
+}
+/* end Discount Section 5 */
+
+
+/* Ads2 Section 7 */
+.ads-img3 {
+    background-image: url(../images/adsimg3.jpg);
+    margin-right: 3%;
+    margin-bottom: 3%;
+}
+
+.ads-img4 {
+    background-image: url(../images/adsimg4.jpg);
+
+}
+
+.ads-img5 {
+    background-image: url(../images/adsimg5.jpg);
+    margin-right: 3%;
+}
+
+.ads-img6 {
+    background-image: url(../images/adsimg6.jpg);
+}
+
+.ads-items {
+    /* border: 3px dashed darkgreen; */
+    width: 48.5%;
+}
+/* end Ads2 Section 7 */
+
+
+/* Reservation Section 8 */
+.reservation {
+    /* border: 5px solid red; */
+    width: 85%;
+    margin: 4em auto;
+}
+
+form {
+    /* border: 3px solid blue; */
+
+    overflow: auto;
+}
+
+.form-group {
+    /* border: 3px solid darkgoldenrod; */
+    height: 650px;
+    width: 49.5%;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    float: left;
+    padding: 2em;
+    margin-right: 1%;
+    margin-top: 2em;
+}
+
+.form-group:nth-child(2) {
+    margin-right: 0;
+}
+
+form input,
+form label,
+form select,
+form textarea {
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    padding: 1em;
+    display: inline-block;
+    margin-bottom: .5em;
+}
+
+form label {
+    font-weight: 700;
+    padding: 0;
+}
+
+form h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form h3::after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 150px;
+    background-image: url(../images/reservation-cards.png);
+    background-size: contain;
+    background-position: center;
+    /* margin-right: auto;
+    margin-left: auto; */
+    margin: auto;
+}
+
+form p {
+    text-align: center;
+    font-weight: 700;
+    margin: 1em;
+}
+
+.res-time {
+    text-align: center;
+}
+
+.res-time * {
+    width: auto;
+}
+
+.res-agreement * {
+    width: auto;
+}
+
+.btn {
+    /* background-color: #c7a17a; */
+    text-transform: uppercase;
+    font-weight: 700;
+}
+/* end Reservation Section 8 */
+
+
+/* Footer Section 9 */
+.footer {
+    /* border: 5px solid red; */
+    background-image: url(../images/footer-img.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.footer-contents {
+    /* border: 4px solid blue; */
+    width: 85%;
+    margin: auto;
+    overflow: auto;
+}
+
+.footer-widgets {
+    /* border: 3px dashed darkgoldenrod; */
+    float: left;
+    margin-right: 7%;
+}
+
+.footer-widgets h3 {
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px #312a26;
+    /* padding-bottom: 1em; */
+    /* margin-bottom: 1em;
+    margin-top: 1em; */
+    margin: 1em auto;
+    /* background-color: orange; */
+}
+
+.footer-widgets h4 {
+    color: #fff;
+}
+
+.footer-widgets p {
+    color: #c7a17a;
+}
+
+.footer-widgets td, th {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.footer-widgets form * {
+    width: auto;
+}
+/* end Footer Section 9 */
+
+
+/* Footer Social Section 10 */
+.footer-social {
+    /* border: 5px solid green; */
+    background-color: #19100f;
+    color: #fff;
+    overflow: auto;
+    padding: 1em;
+}
+
+.social-widgets {
+    /* border: 3px dashed darkgoldenrod; */
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+.footer-social img {
+    width: 1.5em;
+}
+/* end Footer Social Section 10 */
+
+
+
+
+/* Click to top */
+.click-top{
+    position: fixed;
+    right:2%;
+    bottom: 0;
+    padding: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    background-color: #312a26;
+}
