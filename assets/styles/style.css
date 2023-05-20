@@ -402,7 +402,7 @@ form p {
 }
 
 .btn {
-    /* background-color: #c7a17a; */
+    background-color: #c7a17a;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -436,11 +436,7 @@ form p {
     color: #fff;
     text-transform: uppercase;
     text-shadow: 3px 3px 6px #312a26;
-    /* padding-bottom: 1em; */
-    /* margin-bottom: 1em;
-    margin-top: 1em; */
     margin: 1em auto;
-    /* background-color: orange; */
 }
 
 .footer-widgets h4 {
